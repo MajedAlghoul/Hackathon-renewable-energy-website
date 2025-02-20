@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  overflow-y: auto;
+  overflow-y: hidden;
   min-height: 100%;
   overflow-x: hidden;
 }
@@ -13,10 +13,14 @@
   flex-direction: column;
   flex: 0 0 auto;
   align-items: center;
-  position: relative;
   left: calc((100vw - 100%) / 2);
-  width: 462px;
-  margin-bottom: 64px;
+  /*width: 462px;*/
+  width: 100%;
+  height: auto;
+  /*max-width: 1200px;*/
+  margin-bottom: 32px;
+  margin-top: 32px;
+
 }
 
 .nav-dodger {
@@ -24,13 +28,14 @@
   flex-direction: column;
   width: 100%;
 
-  margin-top: 164px;
+  margin-top: 64px;
   align-items: center;
   justify-content: flex-start;
 }
 
+/*
 @media (min-width: 1406px) {
   .inner-houser {
     width: 1406px;
   }
-}
+}*
