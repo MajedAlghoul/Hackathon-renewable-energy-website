@@ -32,7 +32,7 @@ function Home() {
           <div className={styles["scroll-container"]}>
             <div className={styles["card"]}>
               <img src="1.jpg" alt="Image 1" />
-              <h3>product hero Analysis</h3>
+              <h3>product tread  Analysis</h3>
             </div>
 
             <div className={styles["card"]}>
@@ -42,7 +42,7 @@ function Home() {
 
             <div className={styles["card"]}>
               <img src="3.jpg" alt="Image 3" />
-              <h3>Cras Fermentum Sem</h3>
+              <h3>product hero  Analysis</h3>
             </div>
           </div>
           <button className={styles["right-btn"]} onClick="scrollRight()">
