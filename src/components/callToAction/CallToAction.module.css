@@ -1,0 +1,47 @@
+/* styles.css */
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.subheading {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(66, 23, 1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a5319;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #508d4e;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background: #1a5319;
+}
