@@ -4,6 +4,9 @@
   width: 100%;
   background-color: #f8f8fc;
   padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
 }
 
 .footer-container {
