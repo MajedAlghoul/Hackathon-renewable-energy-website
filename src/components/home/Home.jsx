@@ -42,7 +42,7 @@ function Home() {
 
             <div className={styles["card"]}>
               <img src="3.jpg" alt="Image 3" />
-              <h3>product hero  Analysis</h3>
+              <h3>AI power analysis</h3>
             </div>
           </div>
           <button className={styles["right-btn"]} onClick="scrollRight()">
@@ -155,7 +155,7 @@ function Home() {
           </div>
           <div className={styles["feature"]}>
           <FontAwesomeIcon icon={faJsSquare} className={styles["icon"]}/>
-            <h3>Typescript Clean & Organized</h3>
+            <h3>Javascript</h3>
           </div>
           <div className={styles["feature"]}>
           <FontAwesomeIcon icon={faPython} className={styles["icon"]}/>
