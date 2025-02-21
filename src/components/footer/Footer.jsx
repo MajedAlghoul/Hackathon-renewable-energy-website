@@ -1,4 +1,5 @@
 import styles from "./Footer.module.css";
+import { FaFacebookF, FaTwitter, FaDribbble, FaInstagram, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -20,24 +21,26 @@ function Footer() {
           <p>support@energytransition.com</p>
         </div>
       </div>
-
-      <div className={styles["social-icons"]}>
-        <a href="#">
-          <i className={styles["fa-brands fa-twitter"]}></i>
+              
+        {/* The Social Media Icons*/}
+        <div className={styles["social-icons"]}>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <FaTwitter />
         </a>
-        <a href="#">
-          <i className={styles["fa-brands fa-facebook-f"]}></i>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <FaFacebookF />
         </a>
-        <a href="#">
-          <i className={styles["fa-brands fa-dribbble"]}></i>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <FaDribbble />
         </a>
-        <a href="#">
-          <i className={styles["fa-brands fa-instagram"]}></i>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <FaInstagram />
         </a>
-        <a href="#">
-          <i className={styles["fa-brands fa-youtube"]}></i>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <FaYoutube />
         </a>
       </div>
+  
     </footer>
   );
 }

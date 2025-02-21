@@ -5,12 +5,20 @@ import styles from "./Home.module.css";
 import { FaFacebook, FaTwitter, FaGlobe } from "react-icons/fa";
 
 function Home() {
+  const scrollLeft = () => {
+    document.querySelector(`.${styles["scroll-container"]}`).scrollLeft -= 300;
+  };
+
+  const scrollRight = () => {
+    document.querySelector(`.${styles["scroll-container"]}`).scrollLeft += 300;
+  };
+
   return (
     <div className={styles["home-outer-container"]}>
       <Hero />
-
+      {/* WHAT WE OFFER */}
       <div className={styles["what-we-offer-container"]}>
-        <h1 className={styles["heading"]}>what we offer</h1>
+        <h1 className={styles["heading"]}>WHAT WE OFFER</h1>
         <div className={styles["container"]}>
           <button className={styles["left-btn"]} onClick="scrollLeft()">
             &#8592;
@@ -18,18 +26,22 @@ function Home() {
 
           <div className={styles["scroll-container"]}>
             <div className={styles["card"]}>
-              <img src="https://via.placeholder.com/300" alt="Image 1" />
-              <h3>product hero Analysis</h3>
+              <img src="https://via.placeholder.com/300" alt="Image 1: Product Analysis" />
+              <h3>Productive Trend Analysis</h3>
             </div>
 
             <div className={styles["card"]}>
-              <img src="https://via.placeholder.com/300" alt="Image 2" />
-              <h3>real drevin in sign</h3>
+              <img src="https://via.placeholder.com/300" alt="Image 2: Real Insights" />
+              <h3>Real-Driven Insights</h3>
             </div>
 
             <div className={styles["card"]}>
-              <img src="https://via.placeholder.com/300" alt="Image 3" />
-              <h3>Cras Fermentum Sem</h3>
+              <img src="https://via.placeholder.com/300" alt="Image 3: AI Analysis" />
+              <h3>AI-Powered Analysis</h3>
+            </div>
+            <div className={styles["card"]}>
+              <img src="https://via.placeholder.com/300" alt="Data Insights" />
+              <h3>Data-Driven Insights</h3>
             </div>
           </div>
           <button className={styles["right-btn"]} onClick="scrollRight()">
@@ -38,79 +50,90 @@ function Home() {
         </div>
       </div>
 
-      {/* *********************** */}
+      {/* WHO IS THIS FOR*/}
       <WhoIsThisFor />
+
+      {/* MEET OUR TEAM*/}
       <div className={styles["wrapper"]}>
-        <h1>Meet Our Team</h1>
-        <p>
-          Our Team includes <br />
-          Developer AI &amp; Data Analaysis &amp; Web Develobment
-        </p>
-        <div className={styles["teams"]}>
-          <div className={styles["team-member"]}>
-            <div className={styles["img-member"]}>
-              <img src="momen.JPG" alt="team_member_image" />
-            </div>
-            <h3>momen</h3>
-            <p className={styles["role"]}>Analysis</p>
-            <p>Extracting insiants from Data</p>
-            <a href="https://facebook.com" target="_blank">
-              <FaFacebook />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter />
-            </a>
+        <h1>MET OUR TEAM</h1>
+        <p>Our Team consists of experts in Data Analysis, AI, and Web Development.</p>
+        <div className={styles["team-category"]}>
+          <h2>Data Analysis Team</h2>
+          <div className={styles["teams"]}>
+            {[
+              { name: "Momen Ghulmi", role: "Data Analyst", desc: "Extracting insights from Data", img: "Momen.jpg" },
+              { name: "Anagheem Mansour", role: "Team Leader", desc: "Description of role", img: "Anagheem.jpg" }
+            ].map((member, index) => (
+              <div className={styles["team-member"]} key={index}>
+                <div className={styles["img-member"]}>
+                  <img src={member.img} alt={`${member.name}`} />
+                </div>
+                <h3>{member.name}</h3>
+                <p className={styles["role"]}>{member.role}</p>
+                <p>{member.desc}</p>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                  <FaFacebook />
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                  <FaTwitter />
+                </a>
+              </div>
+            ))}
           </div>
-          <div className={styles["team-member"]}>
-            <div className={styles["img-member"]}>
-              <img src="hassen.jpg" alt="team_member_image" />
-            </div>
-            <h3>hassen</h3>
-            <p className={styles["role"]}>AI</p>
-            <p>optimization process through data</p>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter />
-            </a>
+        </div>
+
+        <div className={styles["team-category"]}>
+          <h2>AI Team</h2>
+          <div className={styles["teams"]}>
+            {[
+              { name: "Hussein Awad", role: "AI Programmer", desc: "Optimizing models for better efficiency", img: "Hussein.jpg" },
+              { name: "Muna ??", role: "AI Programmer", desc: "Exploring AI-driven solutions", img: "Muna.jpg" }
+            ].map((member, index) => (
+              <div className={styles["team-member"]} key={index}>
+                <div className={styles["img-member"]}>
+                  <img src={member.img} alt={`${member.name}`} />
+                </div>
+                <h3>{member.name}</h3>
+                <p className={styles["role"]}>{member.role}</p>
+                <p>{member.desc}</p>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                  <FaFacebook />
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                  <FaTwitter />
+                </a>
+              </div>
+            ))}
           </div>
-          <div className={styles["team-member"]}>
-            <div className={styles["img-member"]}>
-              <img src="majed.jpg" alt="team_member_image" />
-            </div>
-            <h3>majed</h3>
-            <p className={styles["role"]}>Web</p>
-            <p>cleaining useing web</p>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter />
-            </a>
+        </div>
+
+        <div className={styles["team-category"]}>
+          <h2>Web Development Team</h2>
+          <div className={styles["teams"]}>
+            {[
+              { name: "Majed Alghoul", role: "Front-end Developer", desc: "Building clean and interactive UI", img: "Majed.jpg" },
+              { name: "Mariam Alqam", role: "Programmer", desc: "Landing page design and development", img: "Mariam.jpg" },
+              { name: "Ameen Dababat", role: "Programmer", desc: "Landing page design and development", img: "Ameen.jpg" }
+            ].map((member, index) => (
+              <div className={styles["team-member"]} key={index}>
+                <div className={styles["img-member"]}>
+                  <img src={member.img} alt={`${member.name}`} />
+                </div>
+                <h3>{member.name}</h3>
+                <p className={styles["role"]}>{member.role}</p>
+                <p>{member.desc}</p>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                  <FaFacebook />
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                  <FaTwitter />
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>
+
 
       {/* ************************* */}
       <div className={styles["container-2"]}>
@@ -176,6 +199,8 @@ function Home() {
           </div>
         </div>
       </div>
+
+      {/* CALL TO ACTION */}
 
       <CallToAction />
     </div>
