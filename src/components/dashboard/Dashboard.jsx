@@ -111,20 +111,24 @@ function Dashboard() {
         <div className={styles["dashboard-buttons-houser"]}>
           {chartsButtons}
         </div>
-        <div className={styles["dashboard-chart-outer-container"]}>
-          <div className={styles["dashboard-chart-title"]}>{chartTitle}</div>
-          <div className={styles["dashboard-chart-inner-container"]}>
-            {chartContent}
+        <div className={styles["dashboard-chart-outer-outer-container"]}>
+          <div className={styles["dashboard-chart-outer-container"]}>
+            <div className={styles["dashboard-chart-title"]}>{chartTitle}</div>
+            <div className={styles["dashboard-chart-inner-container"]}>
+              {chartContent}
+            </div>
           </div>
         </div>
         {sliderAvailable && year.year && (
-          <div className={styles["dashboard-slider-container"]}>
-            <YearSlider
-              year={year.year}
-              setYear={setYear}
-              minV={year.min}
-              maxV={year.max}
-            />
+          <div className={styles["dashboard-slider-container-outer"]}>
+            <div className={styles["dashboard-slider-container"]}>
+              <YearSlider
+                year={year.year}
+                setYear={setYear}
+                minV={year.min}
+                maxV={year.max}
+              />
+            </div>
           </div>
         )}
       </div>

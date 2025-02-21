@@ -18,7 +18,7 @@ function NavBar() {
   return (
     <nav className={styles["nav-bar"]}>
       <div className={styles["nav-bar-logo-container"]}>
-        {widthh <= 1000 && (
+        {widthh <= 1000 && isActive("/dashboard") && (
           <button
             onClick={() => setIsFloatingMenuOpen(!isFloatingMenuOpen)}
             style={{
@@ -28,6 +28,7 @@ function NavBar() {
               border: "none",
               marginRight: "20px",
               cursor: "pointer",
+              background: "none",
             }}
           >
             <img src="/hmenu.svg" alt="Logo" width={"100%"} height={"100%"} />

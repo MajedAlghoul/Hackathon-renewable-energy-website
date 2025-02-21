@@ -1,40 +1,45 @@
 import CallToAction from "../callToAction/CallToAction";
+import Hero from "../hero/Hero";
+import WhoIsThisFor from "../whoIsThisFor/WhoIsThisFor";
 import styles from "./Home.module.css";
 import { FaFacebook, FaTwitter, FaGlobe } from "react-icons/fa";
 
 function Home() {
   return (
-    <div>
-      <h1 className={styles["heading"]}>what we offeliy</h1>
+    <div className={styles["home-outer-container"]}>
+      <Hero />
 
-      <div className={styles["container"]}>
-        <button className={styles["left-btn"]} onclick="scrollLeft()">
-          &#8592;
-        </button>
+      <div className={styles["what-we-offer-container"]}>
+        <h1 className={styles["heading"]}>what we offer</h1>
+        <div className={styles["container"]}>
+          <button className={styles["left-btn"]} onClick="scrollLeft()">
+            &#8592;
+          </button>
 
-        <div className={styles["scroll-container"]}>
-          <div className={styles["card"]}>
-            <img src="https://via.placeholder.com/300" alt="Image 1" />
-            <h3>product hero Analysis</h3>
+          <div className={styles["scroll-container"]}>
+            <div className={styles["card"]}>
+              <img src="https://via.placeholder.com/300" alt="Image 1" />
+              <h3>product hero Analysis</h3>
+            </div>
+
+            <div className={styles["card"]}>
+              <img src="https://via.placeholder.com/300" alt="Image 2" />
+              <h3>real drevin in sign</h3>
+            </div>
+
+            <div className={styles["card"]}>
+              <img src="https://via.placeholder.com/300" alt="Image 3" />
+              <h3>Cras Fermentum Sem</h3>
+            </div>
           </div>
-
-          <div className={styles["card"]}>
-            <img src="https://via.placeholder.com/300" alt="Image 2" />
-            <h3>real drevin in sign</h3>
-          </div>
-
-          <div className={styles["card"]}>
-            <img src="https://via.placeholder.com/300" alt="Image 3" />
-            <h3>Cras Fermentum Sem</h3>
-          </div>
+          <button className={styles["right-btn"]} onClick="scrollRight()">
+            &#8594;
+          </button>
         </div>
-        <button className={styles["right-btn"]} onclick="scrollRight()">
-          &#8594;
-        </button>
       </div>
 
       {/* *********************** */}
-
+      <WhoIsThisFor />
       <div className={styles["wrapper"]}>
         <h1>Meet Our Team</h1>
         <p>
@@ -127,48 +132,52 @@ function Home() {
       </div>
       {/* ****************** */}
 
-      <div className={styles["container_3"]}>
-        <div className={styles["feature"]}>
-          <i class="fab fa-react"></i>
-          <h3>Built with Next.js & React</h3>
-        </div>
-        <div className={styles["feature"]}>
-          <i class="fab fa-bootstrap"></i>
-          <h3>Bootstrap 5 & Sass</h3>
-        </div>
-        <div className={styles["feature"]}>
-          <i class="fab fa-js-square"></i>
-          <h3>Typescript Clean & Organized</h3>
-        </div>
-        <div className={styles["feature"]}>
-          <i class="fas fa-server"></i>
-          <h3>Python</h3>
-        </div>
-        <div className={styles["feature"]}>
-          <i class="fas fa-search"></i>
-          <h3>SEO-friendly Coding</h3>
-        </div>
-        <div className={styles["feature"]}>
-          <i class="fas fa-eye"></i>
-          <h3>Bower BI </h3>
-        </div>
-        <div className={styles["feature"]}>
-          <i class="fas fa-file-alt"></i>
-          <h3>one page</h3>
-        </div>
-        <div className={styles["feature"]}>
-          <i class="fas fa-th"></i>
-          <h3>Isotope Filterable Gallery</h3>
-        </div>
-        <div className={styles["feature"]}>
-          <i class="fas fa-envelope"></i>
-          <h3>Contact Form w/o Page Refresh</h3>
-        </div>
-        <div className={styles["feature"]}>
-          <i class="fas fa-headset"></i>
-          <h3>Top-Notch Support & Free Updates</h3>
+      <div className={styles["container_3_outer"]}>
+        <div className={styles["container_3"]}>
+          <div className={styles["feature"]}>
+            <i className={styles["fab fa-react"]}></i>
+            <h3>Built with Next.js & React</h3>
+          </div>
+          <div className={styles["feature"]}>
+            <i className={styles["fab fa-bootstrap"]}></i>
+            <h3>Bootstrap 5 & Sass</h3>
+          </div>
+          <div className={styles["feature"]}>
+            <i className={styles["fab fa-js-square"]}></i>
+            <h3>Typescript Clean & Organized</h3>
+          </div>
+          <div className={styles["feature"]}>
+            <i className={styles["fas fa-server"]}></i>
+            <h3>Python</h3>
+          </div>
+          <div className={styles["feature"]}>
+            <i className={styles["fas fa-search"]}></i>
+            <h3>SEO-friendly Coding</h3>
+          </div>
+          <div className={styles["feature"]}>
+            <i className={styles["fas fa-eye"]}></i>
+            <h3>Bower BI </h3>
+          </div>
+          <div className={styles["feature"]}>
+            <i className={styles["fas fa-file-alt"]}></i>
+            <h3>one page</h3>
+          </div>
+          <div className={styles["feature"]}>
+            <i className={styles["fas fa-th"]}></i>
+            <h3>Isotope Filterable Gallery</h3>
+          </div>
+          <div className={styles["feature"]}>
+            <i className={styles["fas fa-envelope"]}></i>
+            <h3>Contact Form w/o Page Refresh</h3>
+          </div>
+          <div className={styles["feature"]}>
+            <i className={styles["fas fa-headset"]}></i>
+            <h3>Top-Notch Support & Free Updates</h3>
+          </div>
         </div>
       </div>
+
+      <CallToAction />
     </div>
   );
 }
