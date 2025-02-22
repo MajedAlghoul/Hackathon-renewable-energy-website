@@ -5,7 +5,7 @@
   margin-bottom: 10px;
   font-size: 14px;
   outline: none;
-
+  min-width: 180px;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
