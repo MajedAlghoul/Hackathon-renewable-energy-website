@@ -254,18 +254,27 @@ function Dashboard() {
       }*/
 
       setChartContent(
-        <CustomPieChart chartData={otherData.chart4}></CustomPieChart>
+        <CustomPieChart
+          key="chart4"
+          chartData={otherData.chart4}
+        ></CustomPieChart>
       );
     } else if (chartType === "chart5") {
       setChartContent(
-        <CustomPieChart chartData={otherData.chart5}></CustomPieChart>
+        <CustomPieChart
+          key="chart5"
+          chartData={otherData.chart5}
+        ></CustomPieChart>
       );
     } else if (chartType === "chart6") {
       setChartContent(
-        <CustomPieChart chartData={otherData.chart6}></CustomPieChart>
+        <CustomPieChart
+          key="chart6"
+          chartData={otherData.chart6}
+        ></CustomPieChart>
       );
     } else if (chartType === "chart7") {
-      setChartContent(<CustomBarChart data={otherData.chart7} />);
+      setChartContent(<CustomBarChart key="chart7" data={otherData.chart7} />);
     } else if (chartType === "chart8") {
       const tempYear = Object.keys(otherData.chart8);
       if (year.year === null) {
