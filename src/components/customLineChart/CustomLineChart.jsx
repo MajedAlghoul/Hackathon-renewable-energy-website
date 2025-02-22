@@ -15,7 +15,7 @@ import {
 function CustomLineChart({ data, year, xAxis, yAxis }) {
   return (
     <ResponsiveContainer width="100%" height="100%" overflow="hidden">
-      <LineChart data={data} margin={{ bottom: 10 }}>
+      <LineChart data={data} margin={{ bottom: 10, right: 40 }}>
         {<CartesianGrid strokeDasharray="3 3" opacity={"60%"} />}
         {xAxis}
         {yAxis}

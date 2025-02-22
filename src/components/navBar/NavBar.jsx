@@ -35,7 +35,7 @@ function NavBar() {
           </button>
         )}
 
-        <div>Website Title</div>
+        <div>GreenWatt</div>
       </div>
       <div className={styles["nav-bar-nav-container"]}>
         <button
