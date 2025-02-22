@@ -12,97 +12,24 @@
   margin-top: 40px;
 } */
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-  overflow: hidden;
-  position: relative;
-  padding: 20px;
-
-  position: relative;
-}
-
-/* Scroll container styling */
-.scroll-container {
-  display: flex;
-  gap: 15px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  width: 80%;
-  padding: 10px;
-  white-space: nowrap;
-}
-
-.scroll-container::-webkit-scrollbar {
-  display: none; /* Hide scrollbar */
-}
-
-/* Card styling */
-.card {
-  flex: 0 0 auto;
-  width: 300px;
-  background: #508d4e;
-  padding: 15px;
+.what-we-offer-container {
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
 }
 
-.card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.card h3 {
+.offer-text p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
   margin: 10px 0;
-  font-size: 18px;
-  color: white;
 }
 
-/* Buttons styling */
-/* .btn {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 20px;
-  border-radius: 5px;
-  
-} */
-
-.left-btn {
-  position: absolute;
-  left: 80px;
-  top: 55px;
-  background-color: #508d4e;
-  left: 110px;
-  top: 170px;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  color: white;
+.offer-text span {
+  font-weight: bold;
+  color: #206A5D; /* Green highlight */
+  font-size: 1.4rem;
 }
 
-.right-btn {
-  position: absolute;
-  right: 65px;
-  top: 155px;
-  background-color: #508d4e;
-
-  right: 140px;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  color: white;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
 /*Team Section*/
 /* General Team Section Styling */
 .team-wrapper {
