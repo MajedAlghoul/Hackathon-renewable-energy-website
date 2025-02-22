@@ -75,7 +75,7 @@ function Dashboard() {
     setChartType("chart8");
     setSliderAvailable(true);
     setChartTitle(
-      "Renewable Energy Consumption (TWh) for top 10 countries per year"
+      "Prediction of Renewable Energy Consumption expected for the next 5 years in MENA"
     );
   };
 
@@ -217,8 +217,6 @@ function Dashboard() {
         />
       );
     } else if (chartType === "chart3") {
-      //setChartContent(<CustomBarChart data={data[year]} />);
-      //console.log(otherData.chart3);
       const tempYear = Object.keys(otherData.chart3);
       if (year.year === null) {
         setYear({
@@ -259,51 +257,39 @@ function Dashboard() {
         <CustomPieChart chartData={otherData.chart4}></CustomPieChart>
       );
     } else if (chartType === "chart5") {
-      //setChartContent(<CustomBarChart data={data[year]} />);
-      //console.log(otherData.chart3);
-      /*
-      const tempYear = Object.keys(otherData.chart3);
-      if (year.year === null) {
-        setYear({
-          year: Number(tempYear[0]),
-          min: Number(tempYear[0]),
-          max: Number(tempYear[tempYear.length - 1]),
-        });
-      }*/
-
       setChartContent(
         <CustomPieChart chartData={otherData.chart5}></CustomPieChart>
       );
     } else if (chartType === "chart6") {
-      //setChartContent(<CustomBarChart data={data[year]} />);
-      //console.log(otherData.chart3);
-      /*
-      const tempYear = Object.keys(otherData.chart3);
-      if (year.year === null) {
-        setYear({
-          year: Number(tempYear[0]),
-          min: Number(tempYear[0]),
-          max: Number(tempYear[tempYear.length - 1]),
-        });
-      }*/
-
       setChartContent(
         <CustomPieChart chartData={otherData.chart6}></CustomPieChart>
       );
     } else if (chartType === "chart7") {
-      //setChartContent(<CustomBarChart data={data[year]} />);
-      //console.log(otherData.chart3);
-      /*
-      const tempYear = Object.keys(otherData.chart3);
+      setChartContent(<CustomBarChart data={otherData.chart7} />);
+    } else if (chartType === "chart8") {
+      const tempYear = Object.keys(otherData.chart8);
       if (year.year === null) {
         setYear({
           year: Number(tempYear[0]),
           min: Number(tempYear[0]),
           max: Number(tempYear[tempYear.length - 1]),
         });
-      }*/
+      }
 
-      setChartContent(<CustomBarChart data={otherData.chart7} />);
+      setChartContent(
+        <CustomLineChart
+          data={otherData.chart8[year.year]}
+          xAxis={
+            <XAxis
+              dataKey="country"
+              tickSize={15}
+              tick={{ angle: 30 }}
+              interval={0}
+            />
+          }
+          yAxis={<YAxis />}
+        />
+      );
     }
   }, [year.year, year.min, year.max, chartType, chart1Data, otherData]);
 
