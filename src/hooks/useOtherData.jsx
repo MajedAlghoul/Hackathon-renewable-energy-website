@@ -258,6 +258,7 @@ function useOtherData() {
 
           Papa.parse(csvText, {
             header: true,
+            skipEmptyLines: true,
             dynamicTyping: true, // Convert numeric values automatically
             complete: (result) => {
               if (result.errors.length > 0) {
@@ -269,10 +270,13 @@ function useOtherData() {
               const yearWiseData = {};
 
               data.forEach((row) => {
-                const year = row.Year;
-                const country = row.Entity;
-                const value = parseFloat(row["Renewables (% electricity)"]);
+                const year = row.year;
+                const country = row.country;
+                let value = parseFloat(
+                  row["renewables_electricity_consumption"]
+                );
 
+                value = value * 100;
                 if (!year || !country || isNaN(value)) return; // Skip invalid rows
 
                 if (!yearWiseData[year]) {
@@ -297,7 +301,7 @@ function useOtherData() {
         .catch((error) => console.error("Fetch Error:", error));
     };
 
-    chart8("/other_info.csv");
+    chart8("/pred_data.csv");
 
     chart7("/other_info.csv");
 

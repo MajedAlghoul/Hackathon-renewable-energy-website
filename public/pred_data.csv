@@ -1,0 +1,85 @@
+country,year,continent,renewables_electricity_consumption
+Egypt,2025,Africa,0.411769254
+Egypt,2026,Africa,0.411769254
+Egypt,2027,Africa,0.411769254
+Egypt,2028,Africa,0.411769254
+Egypt,2029,Africa,0.411769254
+Egypt,2030,Africa,0.411769254
+Iran,2025,Asia,0.000460577
+Iran,2026,Asia,0.000480684
+Iran,2027,Asia,0.000551663
+Iran,2028,Asia,0.000529165
+Iran,2029,Asia,0.000615007
+Iran,2030,Asia,0.105220075
+Iraq,2025,Asia,0.097643576
+Iraq,2026,Asia,0.097989132
+Iraq,2027,Asia,0.127614587
+Iraq,2028,Asia,0.105859746
+Iraq,2029,Asia,0.12706513
+Iraq,2030,Asia,0.377586914
+Oman,2025,Asia,0.001995307
+Oman,2026,Asia,0.001955232
+Oman,2027,Asia,0.001959745
+Oman,2028,Asia,0.003559508
+Oman,2029,Asia,0.528781059
+Oman,2030,Asia,0.411700122
+Palestine,2025,Asia,0.411697984
+Palestine,2026,Asia,0.411697984
+Palestine,2027,Asia,0.411769254
+Palestine,2028,Asia,0.411766403
+Palestine,2029,Asia,0.411761414
+Palestine,2030,Asia,0.411759276
+Qatar,2025,Asia,0.411911793
+Qatar,2026,Asia,0.411911793
+Qatar,2027,Asia,0.411911793
+Qatar,2028,Asia,0.411911793
+Qatar,2029,Asia,0.411776381
+Qatar,2030,Asia,0.411769254
+Saudi Arabia,2025,Asia,0.200032514
+Saudi Arabia,2026,Asia,0.207823452
+Saudi Arabia,2027,Asia,0.234191358
+Saudi Arabia,2028,Asia,0.221377514
+Saudi Arabia,2029,Asia,0.178594362
+Saudi Arabia,2030,Asia,0.177299056
+South Sudan,2025,Africa,0.891809665
+South Sudan,2026,Africa,0.880744838
+South Sudan,2027,Africa,0.824113205
+South Sudan,2028,Africa,0.862518381
+South Sudan,2029,Africa,0.105289254
+South Sudan,2030,Africa,0.093330588
+Sudan,2025,Africa,0
+Sudan,2026,Africa,0
+Sudan,2027,Africa,0
+Sudan,2028,Africa,0
+Sudan,2029,Africa,0
+Sudan,2030,Africa,0
+Syria,2025,Asia,0.177673644
+Syria,2026,Asia,0.208932258
+Syria,2027,Asia,0.271200814
+Syria,2028,Asia,0.24134416
+Syria,2029,Asia,0.230089152
+Syria,2030,Asia,0.207705494
+Tanzania,2025,Africa,0.63240935
+Tanzania,2026,Africa,0.678656652
+Tanzania,2027,Africa,0.746415823
+Tanzania,2028,Africa,0.728458815
+Tanzania,2029,Africa,0.749219801
+Tanzania,2030,Africa,0.747330962
+United Arab Emirates,2025,Asia,0
+United Arab Emirates,2026,Asia,0.003165894
+United Arab Emirates,2027,Asia,0.003224144
+United Arab Emirates,2028,Asia,0.008249085
+United Arab Emirates,2029,Asia,0.003274306
+United Arab Emirates,2030,Asia,0.002665258
+Western Sahara,2025,Africa,0.87906003
+Western Sahara,2026,Africa,0.694921138
+Western Sahara,2027,Africa,0.879170406
+Western Sahara,2028,Africa,0.900211174
+Western Sahara,2029,Africa,0.879742222
+Western Sahara,2030,Africa,0.890298297
+Yemen,2025,Asia,0.411697984
+Yemen,2026,Asia,0.411701548
+Yemen,2027,Asia,0.416165654
+Yemen,2028,Asia,0.411697984
+Yemen,2029,Asia,0.45570934
+Yemen,2030,Asia,0.437515278

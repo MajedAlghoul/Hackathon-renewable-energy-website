@@ -16,6 +16,7 @@ function Dashboard() {
   const { isFloatingMenuOpen, setIsFloatingMenuOpen } = useFloatingMenuOpen();
   const [chartType, setChartType] = useState("chart1");
   const [chartContent, setChartContent] = useState(null);
+  const [currentStartYear, setCurrentStartYear] = useState(null);
   const [chartTitle, setChartTitle] = useState(
     "General Power Consumption (TWh) vs Year"
   );
@@ -177,6 +178,7 @@ function Dashboard() {
     if (chartType === "chart1") {
       setChartContent(
         <CustomLineChart
+          key="chart1"
           data={chart1Data}
           xAxis={<XAxis dataKey="year" tickSize={15} tick={{ angle: 30 }} />}
           yAxis={
@@ -194,16 +196,19 @@ function Dashboard() {
       //setChartContent(<CustomBarChart data={data[year]} />);
       //console.log(otherData.chart2);
       const tempYear = Object.keys(otherData.chart2);
-      if (year.year === null) {
+      console.log(Number(tempYear[0]), year.year);
+      if (year.year === null || Number(tempYear[0]) !== currentStartYear) {
         setYear({
           year: Number(tempYear[0]),
           min: Number(tempYear[0]),
           max: Number(tempYear[tempYear.length - 1]),
         });
+        setCurrentStartYear(Number(tempYear[0]));
       }
 
       setChartContent(
         <CustomLineChart
+          key="chart2"
           data={otherData.chart2[year.year]}
           xAxis={
             <XAxis
@@ -218,16 +223,19 @@ function Dashboard() {
       );
     } else if (chartType === "chart3") {
       const tempYear = Object.keys(otherData.chart3);
-      if (year.year === null) {
+      if (year.year === null || Number(tempYear[0]) !== currentStartYear) {
         setYear({
           year: Number(tempYear[0]),
           min: Number(tempYear[0]),
           max: Number(tempYear[tempYear.length - 1]),
         });
+
+        setCurrentStartYear(Number(tempYear[0]));
       }
 
       setChartContent(
         <CustomLineChart
+          key="chart3"
           data={otherData.chart3[year.year]}
           xAxis={
             <XAxis
@@ -277,16 +285,19 @@ function Dashboard() {
       setChartContent(<CustomBarChart key="chart7" data={otherData.chart7} />);
     } else if (chartType === "chart8") {
       const tempYear = Object.keys(otherData.chart8);
-      if (year.year === null) {
+      if (year.year === null || Number(tempYear[0]) !== currentStartYear) {
         setYear({
           year: Number(tempYear[0]),
           min: Number(tempYear[0]),
           max: Number(tempYear[tempYear.length - 1]),
         });
+
+        setCurrentStartYear(Number(tempYear[0]));
       }
 
       setChartContent(
         <CustomLineChart
+          key="chart8"
           data={otherData.chart8[year.year]}
           xAxis={
             <XAxis
