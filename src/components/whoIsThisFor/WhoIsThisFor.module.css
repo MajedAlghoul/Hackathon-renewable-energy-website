@@ -2,10 +2,12 @@
 
 .services {
   padding: 50px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #D6EFD8, #80AF81); 
 }
 
 .subheading {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   color: #1a5319;
   text-transform: uppercase;
@@ -30,13 +32,13 @@
 }
 
 .service-box {
-  background: #508d4e;
-  color: white;
+  background: white;
   padding: 20px;
   border-radius: 10px;
   width: 250px;
-  text-align: center;
-  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-box:hover {
@@ -47,8 +49,9 @@
 .icon {
   font-size: 30px;
   margin-bottom: 10px;
-  color: white;
+  color: black;
 }
+
 
 /* Responsive for Smaller Screens */
 @media (max-width: 1024px) {

@@ -6,10 +6,10 @@ function CallToAction() {
       <p className={styles["subheading"]}>CALL TO ACTION</p>
       <h1 className={styles["heading"]}>
         We are trusted by over{" "}
-        <span className={styles["highlight"]}>5000+</span> clients. <br />
-        Join them now and grow your business.
+        <span className={styles["highlight"]}>100+</span> clients. <br />
+        Join them now and invest in Renewable Energies.
       </h1>
-      <button className={styles["cta-button"]}>Get Started Now</button>
+      <button className={styles["cta-button"]}>Explore the Dashboard</button>
     </div>
   );
 }
